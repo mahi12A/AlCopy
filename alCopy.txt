@@ -1,0 +1,27 @@
+package arn;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class Copy {
+
+	public static void main(String[] args) {
+		List<String> a = new ArrayList<String>();
+		List<String> b = new ArrayList<String>();
+		a.add("mahi");
+		a.add("sunny");
+		a.add("ayush");
+		
+		b.add("amahi");
+		b.add("asunny");
+		b.add("aayush");
+		
+		Collections.copy(b,a);
+		System.out.println(a+" "+b);
+
+
+	}
+
+}
